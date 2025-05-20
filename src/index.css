@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: medium;
+    src: url(/fonts/SuisseIntl-Medium.ttf);
+}
+
+
+
+.font-md {
+    font-family: medium;
+}
+
+
+* {
+    font-family: medium;
+}
