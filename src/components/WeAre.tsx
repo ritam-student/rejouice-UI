@@ -17,13 +17,12 @@ export default function WeAre() {
         }, {
             opacity: 1,
             scaleY: 1,
-            duration: 1,
             stagger: 0.6,
             scrollTrigger: {
                 trigger : ".parent",
                 toggleActions: 'play reverse play reverse ',
                 scrub : 5,
-                start : "top 80%",
+                start : "top 75%",
                 end: "top 40%"
                 
 
@@ -86,15 +85,15 @@ export default function WeAre() {
             });
     
 
-    return <div className="h-auto w-full  ">
-        <div className="py-20 px-6 sm:px-8 md:px-10 lg:px-14">
+    return <div className="h-auto w-full  bg-black ">
+        <div className="pt-20  px-6 sm:px-8 md:px-10 lg:px-14">
             <p className="parent text-3xl md:text-[56px] leading-[40px] md:leading-[65px] py-10 ">
                 <span className=" text md:ml-[15vw] ">We</span>  <span className="text">blend</span> <span className="text">the</span> <span className="text ">power</span> <span className="text">of</span> <span className="text">strategy,</span>  <span className="text">design,</span> <span className="text">and</span> <span className="text">performance</span> <span className="text">marketing</span> <span className="text">to</span> <span className="text">transform</span> <span className="text">founders'</span> <span className="text">visions</span> <span className="text">into</span> <span className="text">remarkable</span> <span className="text">brands.</span> <span className="text"> See</span> 
                 <span onMouseOver={hovered} onMouseLeave={leaved} className=" relative cursor-pointer text origin-bottom inline-block mx-2 "> our services. <div className="underline absolute bottom-0  left-0 bg-white w-0 h-[2px] "></div></span>
             </p>
             <div className="bg-gray-400 w-full h-[0.5px] mt-5 "></div>
             <div className="flex items-center justify-between py-20">
-                <div className="w-1/2 h-full  self-start mb-auto">Tomorrow’s brands, today.</div>
+                <div className="w-1/2 h-full md:text-xl self-start mb-auto">Tomorrow’s brands, today.</div>
                 <div className="w-1/2 h-full ">
                     <div className="w-[90%] md:w-[75%]  h-full  text-lg md:text-2xl">
                         We are a growth accelerator.

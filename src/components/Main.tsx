@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavBar from "./Nav";
 import WeAre from "./WeAre";
+import Highlights from "./Highlights";
+import OurApproach from "./OurApproach";
 
 
 
@@ -84,8 +86,13 @@ export default function Main() {
                 <div  className="moving-cursor fixed top-0 left-0 opacity-0 bg-violet-500 h-[40px] w-[40px] flex items-center justify-center rounded-[100%] text-center ">play</div>
             </div>
         </div>
-        <div className="z-30 relative -translate-y-24 bottom w-full bg-black h-auto">
+        <div className="z-30 relative -translate-y-24 bottom w-full  h-auto">
             <WeAre />
         </div>
+        <div className="-translate-y-24 ">
+            <Highlights />
+        </div>
+        <OurApproach />
+        
     </div>
 }

@@ -108,22 +108,22 @@ export default function NavBar() {
 
     return <nav className=" w-full h-auto bg-transparent fixed top-0 left-0  ">
         <div className=" relative z-50 flex items-center justify-between px-6 md:px-8 lg:px-10 py-5">
-            <div className="">The Growth Accelerator</div>
+            <div className="nav-text">The Growth Accelerator</div>
             <div className="hidden md:block ">
                 <div className="flex items-center justify-between gap-2">
-                    <p className="text-gray-400 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Home</p>
-                    <p className="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Work</p>
-                    <p className="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">About</p>
-                    <p className="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Services</p>
-                    <p className="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Contact</p>
+                    <p className=" text-gray-400 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Home</p>
+                    <p className="nav-text relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Work</p>
+                    <p className="nav-text relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">About</p>
+                    <p className="nav-text relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Services</p>
+                    <p className="nav-text relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-600 after:ease-linear cursor-pointer ">Contact</p>
                 </div>
             </div>
-            <div onMouseOver={LetsTalkMove} onMouseLeave={LetsTalkMoveBack} className="hidden md:block overflow-hidden  "><p  ref={letsTalkRef} className="translate-x-[-11%] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-500 after:ease-linear after:delay-300 cursor-pointer">↗ Let's talk ↗</p></div> 
+            <div onMouseOver={LetsTalkMove} onMouseLeave={LetsTalkMoveBack} className="hidden md:block overflow-hidden  "><p  ref={letsTalkRef} className="nav-text translate-x-[-11%] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-500 after:ease-linear after:delay-300 cursor-pointer">↗ Let's talk ↗</p></div> 
 
             {/**   small screen    */}
             <div 
             onClick={toggleMenueBar}
-            className="block md:hidden px-4 py-3 text-center bg-[#2D2D2D] cursor-pointer ">
+            className="block md:hidden px-4 py-3 text-center bg-[#212121]/60 cursor-pointer ">
                 {
                     isMenueOpen ? "Close" : "Menue"
                 }
