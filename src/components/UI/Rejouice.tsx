@@ -10,7 +10,7 @@ export default function Rejouice(){
             scaleY: 0,
         }, {
             scaleY: 1,
-            stagger: 0.06,
+            stagger: 0.08,
         })
     })
 

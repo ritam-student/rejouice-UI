@@ -106,7 +106,7 @@ export default function NavBar() {
 
 
     return <nav className=" w-full h-auto bg-transparent fixed top-0 left-0  ">
-        <div className=" relative z-30 flex items-center justify-between px-6 md:px-8 lg:px-10 py-5">
+        <div className=" relative z-50 flex items-center justify-between px-6 md:px-8 lg:px-10 py-5">
             <div className="">The Growth Accelerator</div>
             <div className="hidden md:block ">
                 <div className="flex items-center justify-between gap-2">
@@ -128,7 +128,7 @@ export default function NavBar() {
                 }
             </div>
         </div>
-        <div ref={menueRef} className="block md:hidden w-full origin-top  h-auto bg-[#101010] absolute top-0 left-0 z-20  px-10 py-28 font-reg ">
+        <div ref={menueRef} className="block md:hidden w-full origin-top  h-auto bg-[#101010] absolute top-0 left-0 z-40  px-10 py-28 font-reg ">
                 
                 <div onMouseOver={LetsTalkMoveSm} onMouseLeave={LetsTalkMoveSmBack} className="overflow-hidden inline-block "><p ref={letsTalkSmRef} className=" text-xl translate-x-[-13%] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-500 after:ease-linear after:delay-300 cursor-pointer  inline-block">↗ Let's talk ↗</p></div>
 
@@ -140,7 +140,7 @@ export default function NavBar() {
                     <p className="text overflow-hidden origin-bottom">Contact</p>
                 </div>
 
-                <div className="text-3xl  flex flex-col items-start gap-3">
+                <div className="text-2xl  flex flex-col items-start gap-3">
                     <p className="text overflow-hidden origin-bottom">Instagram</p>
                     <p className="text overflow-hidden origin-bottom">LinkedIn</p>
                 </div>
