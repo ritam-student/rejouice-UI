@@ -9,11 +9,7 @@ export default function NavBar() {
     const {contextSafe} = useGSAP();
 
 
-    useGSAP(() => {
-        gsap.from(menueRef.current , {
-            transform: "translateY(-100%)"
-        })
-    })
+    
 
     const letsTalkRef = useRef(null);
     const letsTalkSmRef = useRef(null);
