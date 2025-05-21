@@ -8,7 +8,12 @@ export default function NavBar() {
 
     const {contextSafe} = useGSAP();
 
-
+    useGSAP(() => {
+        gsap.to(".text" , {
+                scaleY: 1,
+                stagger: 0.05
+            })
+    } , [])
     
 
     const letsTalkRef = useRef(null);
@@ -73,7 +78,7 @@ export default function NavBar() {
             // close menue
             setIsMenueOpen(false);
             const tl = gsap.timeline();
-            tl.to(".text" , {
+            tl.to(".t1" , {
                 scaleY: 0,
                 stagger: -0.05
             });
@@ -92,7 +97,7 @@ export default function NavBar() {
                 duration: 0.4,
                 ease: "expoScale(0.5,7,none)",
             });
-            tl1.to(".text" , {
+            tl1.to(".t1" , {
                 scaleY: 1,
                 stagger: 0.05
             })
@@ -128,17 +133,17 @@ export default function NavBar() {
                 
                 <div onMouseOver={LetsTalkMoveSm} onMouseLeave={LetsTalkMoveSmBack} className="overflow-hidden inline-block "><p ref={letsTalkSmRef} className=" text-xl translate-x-[-13%] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white hover:after:w-full after:transition-all after:duration-500 after:ease-linear after:delay-300 cursor-pointer  inline-block">↗ Let's talk ↗</p></div>
 
-                <div className="text-5xl  my-16 flex flex-col  items-start justify-start gap-3 cursor-pointer ">
-                    <p   className="text-gray-400 text overflow-hidden origin-bottom">Home</p>
-                    <p className="text overflow-hidden origin-bottom">Work</p>
-                    <p className="text overflow-hidden origin-bottom">About</p>
-                    <p className="text overflow-hidden origin-bottom">Services</p>
-                    <p className="text overflow-hidden origin-bottom">Contact</p>
+                <div className="text-5xl my-16 flex flex-col items-start justify-start gap-3 cursor-pointer">
+                    <p className="t1 text-gray-400  overflow-hidden origin-bottom " >Home</p>
+                    <p className="t1 overflow-hidden origin-bottom" >Work</p>
+                    <p className="t1 overflow-hidden origin-bottom" >About</p>
+                    <p className="t1 overflow-hidden origin-bottom" >Services</p>
+                    <p className="t1 overflow-hidden origin-bottom" >Contact</p>
                 </div>
 
-                <div className="text-2xl  flex flex-col items-start gap-3">
-                    <p className="text overflow-hidden origin-bottom">Instagram</p>
-                    <p className="text overflow-hidden origin-bottom">LinkedIn</p>
+                <div className="text-2xl  flex flex-col items-start gap-3 ">
+                    <p className="t1 overflow-hidden origin-bottom">Instagram</p>
+                    <p className="t1 overflow-hidden origin-bottom">LinkedIn</p>
                 </div>
         </div>
     </nav>
