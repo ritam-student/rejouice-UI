@@ -18,3 +18,9 @@
 * {
     font-family: medium;
 }
+
+
+.inner-content span, 
+.inner-content1 span{
+    display: inline-block;
+}

@@ -7,6 +7,7 @@ import NavBar from "./Nav";
 import WeAre from "./WeAre";
 import Highlights from "./Highlights";
 import OurApproach from "./OurApproach";
+import Footer from "./Footer";
 
 
 
@@ -93,6 +94,7 @@ export default function Main() {
             <Highlights />
         </div>
         <OurApproach />
+        <Footer />
         
     </div>
 }
