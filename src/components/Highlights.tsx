@@ -28,15 +28,24 @@ export default function Highlights() {
 
             <div className="hidden md:block">
                 <div className="flex flex-col gap-3 mt-8">
-                    <div className="w-full h-auto object-cover object-center overflow-hidden">
+                    <div className="w-full h-auto object-cover object-center overflow-hidden relative">
                         <img src="/image/h-1.avif" alt="h1 image" className="h-full w-full" />
+                        <div className="absolute bottom-[20%] left-[50%] ">
+                            <img src="/image/rivian-white.svg" alt="rivian" className="w-auto h-auto scale-125" />
+                        </div>
                     </div>
                     <div className="flex items-center justify-between gap-2 w-full h-auto">
-                        <div className="w-1/2 h-auto object-cover object-center overflow-hidden">
+                        <div className="w-1/2 h-auto object-cover object-center overflow-hidden relative">
                             <img src="/image/h-2.avif" alt="h2 image" className="w-full h-full" />
+                            <div className="absolute bottom-[20%] left-[50%] translate-x-[-50%] ">
+                                <img src="/image/oura-logo-white.svg" alt="rivian" className="w-auto h-auto scale-125" />
+                            </div>
                         </div>
-                        <div className="w-1/2 h-auto object-cover object-center overflow-hidden">
+                        <div className="w-1/2 h-auto object-cover object-center overflow-hidden relative">
                             <img src="/image/h-3.avif" alt="h3 image" className="w-full h-full" />
+                            <div className="absolute bottom-[20%] left-[50%] translate-x-[-50%]">
+                                <img src="/image/mixion-logo-white.svg" alt="rivian" className="w-auto h-auto scale-125" />
+                            </div>
                         </div>
                     </div>
                 </div>
