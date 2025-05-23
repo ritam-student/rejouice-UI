@@ -106,7 +106,7 @@ export default function NavBar() {
     })
 
 
-    return <nav className=" w-full h-auto bg-transparent fixed top-0 left-0  ">
+    return <nav className="head w-full h-auto bg-transparent fixed top-0 left-0  ">
         <div className=" relative z-50 flex items-center justify-between px-6 md:px-8 lg:px-10 py-5">
             <div className="nav-text">The Growth Accelerator</div>
             <div className="hidden md:block ">

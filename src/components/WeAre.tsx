@@ -93,9 +93,9 @@ export default function WeAre() {
             </p>
             <div className="bg-gray-400 w-full h-[0.5px] mt-5 "></div>
             <div className="flex items-center justify-between py-20">
-                <div className="w-1/2 h-full md:text-xl self-start mb-auto">Tomorrow’s brands, today.</div>
-                <div className="w-1/2 h-full ">
-                    <div className="w-[90%] md:w-[75%]  h-full  text-lg md:text-2xl">
+                <div className="w-[35%]  h-full text-lg md:text-xl self-start mb-auto">Tomorrow’s brands, today.</div>
+                <div className="w-[60%] h-full ">
+                    <div className="w-[90%] md:w-[75%]  h-full   md:text-2xl">
                         We are a growth accelerator.
                         <br />
                         <br />

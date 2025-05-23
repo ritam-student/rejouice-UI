@@ -21,7 +21,7 @@ export default function OurApproach() {
             scrollTrigger: {
                 trigger: ".approach",
                 toggleActions: "play reverse play reverse",
-                start: "top 3%"
+                start: "top 3%",
             }
         })
     })
@@ -106,7 +106,7 @@ export default function OurApproach() {
             </Swiper>
         </div>
 
-        <div className="w-auto h-[0.5px] bg-gray-400 mx-6 md:mx-8 lg:mx-10  "></div>
+        <div className="w-auto h-[0.5px] bg-gray-400 mx-6 md:mx-8 lg:mx-10 my-8 "></div>
 
         {/**    part 2   */}
 
