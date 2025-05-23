@@ -15,7 +15,6 @@ export default function Footer() {
                     trigger: ".div1",
                     toggleActions: "play reverse play reverse",
                     scroller: "body",
-                    markers :  true
                 }
             })
         }
@@ -128,7 +127,7 @@ export default function Footer() {
             </div>
 
             {/***    common part    */}
-            <div className="slef-end mt-auto mb-3 last-div ">
+            <div className="slef-end mt-auto pb-8 last-div ">
                 <Rejouice />
             </div>
         </div>
